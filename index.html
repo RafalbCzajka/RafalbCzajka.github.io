@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temperature Metric Converter</title>
+    <script src="./temperature.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body onload="assignVariables()" id="background">
+    <header>
+    <h1>Temperature Converter</h1>
+    </header>
+    <main>
+        <div class="grid">
+            <label>°C</label>
+            <label>°F</label>
+            <label>°K</label>
+            <input type="number" id="celsius" oninput="convertCelsius()" placeholder="0">
+            <input type="number" id="fahrenheit" oninput="convertFahrenheit()" placeholder="32">
+            <input type="number" id="kelvin" oninput="convertKelvin()" placeholder="273.15">
+        </div>
+    </main>
+    <div id="attribution">
+        <p id="attributionText">Photo by <a href="https://unsplash.com/@maksym_harbar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maksym Harbar</a> on <a href="https://unsplash.com/photos/2tm8_o9OOrY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+    </div>
+</body>
+</html>
